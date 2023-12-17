@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /personal-financial/api/v1
+
+spring:
+  datasource:
+    url: jdbc:mysql://personalfinancialdb.cb67f5stv5xq.us-east-2.rds.amazonaws.com:3306/financial?useSSL=false
+    username: root
+    password: Aversiahorra
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        hbm2ddl:
+          auto: update
